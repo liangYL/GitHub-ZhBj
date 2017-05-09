@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <ListView
+            android:id="@+id/lv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#fff"
+            android:background="@color/gainsboro"
+            android:divider="@null"
+            android:visibility="visible"
+            >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/ll_vp"
+            android:visibility="gone"
+            android:background="#78000000"
+            >
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="关闭"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:layout_marginBottom="10dp"
+               android:id="@+id/vp_back"
+                />
+
+
+            <com.boke.zhbj.view.HorizontalScrollViewPager
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/vp_photos"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/vp_num"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="1/5"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </FrameLayout>
+
+</LinearLayout>
